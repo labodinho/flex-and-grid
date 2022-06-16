@@ -12,16 +12,15 @@ a{
     color: #00CECB;
     font-size: 40px;
     margin: 0px auto;
-    margin-left: 314px;
     text-decoration: none;
-    display: flex;
+    display: inline-block;
 }
 
 .container{
     max-width: 960px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 10px;
+    grid-gap: 10px;
     margin: 100px auto;
 }
 
@@ -50,5 +49,16 @@ a{
     grid-column: 2/4;
 }
 
+
+
+@media screen and (max-width: 700px) {
+    .container{
+        display: flex;
+       flex-wrap: wrap;
+    }
+    .box{
+        flex: 50%;
+    }
+}
 
 
